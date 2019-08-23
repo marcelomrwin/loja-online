@@ -114,6 +114,7 @@
         </FactMapping>
       </factMappings>
       <type>RULE</type>
+      <ruleFlowGroup>calculo-de-frete</ruleFlowGroup>
       <skipFromBuild>false</skipFromBuild>
     </simulationDescriptor>
     <scenarios>
