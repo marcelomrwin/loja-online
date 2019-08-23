@@ -1,0 +1,225 @@
+<decision-table52>
+  <tableName>tabela_de_calculo_do_frete</tableName>
+  <rowNumberCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </rowNumberCol>
+  <descriptionCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </descriptionCol>
+  <metadataCols/>
+  <attributeCols/>
+  <conditionPatterns>
+    <Pattern52>
+      <factType>Compra</factType>
+      <boundName>$compra</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Valor da Compra</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>valorTotal</factField>
+          <fieldType>Double</fieldType>
+          <operator>&gt;</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Quantidade de produtos</header>
+          <constraintValueType>5</constraintValueType>
+          <factField>$compra.produtos.size &gt; $param</factField>
+          <operator></operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
+    <Pattern52>
+      <factType>Cliente</factType>
+      <boundName>$cliente</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Nivel do cliente</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>nivel</factField>
+          <fieldType>Integer</fieldType>
+          <operator>==</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+      <entryPointName>$compra</entryPointName>
+    </Pattern52>
+    <Pattern52>
+      <factType>Endereco</factType>
+      <boundName>$endereco</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>CEP</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>cep</factField>
+          <fieldType>String</fieldType>
+          <operator>in</operator>
+          <valueList>50000-000,50001-000,5000-002</valueList>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+      <entryPointName>$cliente</entryPointName>
+    </Pattern52>
+  </conditionPatterns>
+  <actionCols>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Valor do Frete</header>
+      <boundName>$compra</boundName>
+      <factField>frete</factField>
+      <type>Double</type>
+      <update>false</update>
+    </set-field-col52>
+  </actionCols>
+  <auditLog>
+    <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
+      <acceptedTypes>
+        <entry>
+          <string>INSERT_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>INSERT_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>UPDATE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+      </acceptedTypes>
+    </filter>
+    <entries/>
+  </auditLog>
+  <imports>
+    <imports/>
+  </imports>
+  <packageName>com.redhat.loja_online</packageName>
+  <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
+  <data>
+    <list>
+      <value>
+        <valueNumeric>1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52[2]/conditions/condition-column52/typedDefaultValue"/>
+      <value>
+        <valueString>50000-000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52[2]/conditions/condition-column52/typedDefaultValue"/>
+      <value>
+        <valueString>50001-000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+    </list>
+    <list>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[2]/typedDefaultValue"/>
+      <value reference="../../../conditionPatterns/Pattern52[2]/conditions/condition-column52/typedDefaultValue"/>
+      <value>
+        <valueString>5000-002</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+    </list>
+  </data>
+</decision-table52>
