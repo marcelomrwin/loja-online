@@ -85,4 +85,9 @@ public class Compra implements java.io.Serializable {
 		this.totalDescontos = totalDescontos;
 	}
 
+	
+	public void aplicarDescontoPercentual(Double percentual) {
+		double percent = percentual/100;
+		this.valorTotal = this.valorTotal - (percent * this.valorTotal);
+	}
 }
