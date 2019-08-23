@@ -34,30 +34,6 @@
               <step>Compra</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>cliente</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>idade</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1566579124225</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1566579124225</name>
-            <className>com.redhat.loja_online.Compra</className>
-          </factIdentifier>
-          <className>java.lang.Integer</className>
-          <factAlias>Compra</factAlias>
-          <expressionAlias>cliente.idade</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>Compra</step>
-            </ExpressionElement>
-            <ExpressionElement>
               <step>valorTotal</step>
             </ExpressionElement>
           </expressionElements>
@@ -65,7 +41,10 @@
             <name>1566579172996</name>
             <type>GIVEN</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <factIdentifier>
+            <name>1566579124225</name>
+            <className>com.redhat.loja_online.Compra</className>
+          </factIdentifier>
           <className>java.lang.Double</className>
           <factAlias>Compra</factAlias>
           <expressionAlias>valorTotal</expressionAlias>
@@ -123,14 +102,6 @@
               <className>com.redhat.loja_online.Compra</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1566579124225</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">65</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../FactMappingValue[3]/factIdentifier"/>
-            <expressionIdentifier>
               <name>1566579172996</name>
               <type>GIVEN</type>
             </expressionIdentifier>
@@ -173,7 +144,10 @@
                   <step>idade</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/expressionIdentifier"/>
+              <expressionIdentifier>
+                <name>1566579124225</name>
+                <type>GIVEN</type>
+              </expressionIdentifier>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
               <className>java.lang.Integer</className>
               <factAlias>Compra</factAlias>
@@ -188,7 +162,7 @@
                   <step>valorTotal</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
               <className>java.lang.Double</className>
               <factAlias>Compra</factAlias>
@@ -203,7 +177,7 @@
                   <step>valorTotal</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
               <className>java.lang.Double</className>
               <factAlias>Compra</factAlias>
