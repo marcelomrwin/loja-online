@@ -52,6 +52,24 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
+              <step>Cliente</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>idade</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1566586962361</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Integer</className>
+          <factAlias>Cliente</factAlias>
+          <expressionAlias>idade</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
               <step>Compra</step>
             </ExpressionElement>
             <ExpressionElement>
@@ -79,6 +97,27 @@
               <step>Compra</step>
             </ExpressionElement>
             <ExpressionElement>
+              <step>cliente</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>idade</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1566586982668</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[5]/factIdentifier"/>
+          <className>java.lang.Integer</className>
+          <factAlias>Compra</factAlias>
+          <expressionAlias>cliente.idade</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Compra</step>
+            </ExpressionElement>
+            <ExpressionElement>
               <step>frete</step>
             </ExpressionElement>
           </expressionElements>
@@ -86,7 +125,7 @@
             <name>0|2</name>
             <type>EXPECT</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[4]/factIdentifier"/>
+          <factIdentifier reference="../../FactMapping[5]/factIdentifier"/>
           <className>java.lang.Double</className>
           <factAlias>Compra</factAlias>
           <expressionAlias>frete</expressionAlias>
@@ -152,6 +191,28 @@
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">1</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1566586746814</name>
+              <className>com.redhat.loja_online.Cliente</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1566586962361</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">50</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>0|1</name>
+              <className>com.redhat.loja_online.Compra</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1566586982668</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">50</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
