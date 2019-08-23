@@ -8,8 +8,8 @@ no-loop true
 //        $compra: Compra( $cliente == cliente )
     then
         System.out.println("ACIONOU A REGRA");
-//        modify( $compra ){
-//        	aplicarDescontoPercentual(20.0);
-//        }
+        modify( $compra ){
+        	aplicarDescontoPercentual(20.0);
+        }
 end
 
