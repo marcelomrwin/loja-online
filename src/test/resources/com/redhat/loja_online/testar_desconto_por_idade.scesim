@@ -90,7 +90,6 @@
         </FactMapping>
       </factMappings>
       <type>RULE</type>
-      <ruleFlowGroup>desconto-por-idade</ruleFlowGroup>
       <skipFromBuild>false</skipFromBuild>
     </simulationDescriptor>
     <scenarios>
