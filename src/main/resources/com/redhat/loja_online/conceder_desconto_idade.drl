@@ -5,7 +5,7 @@ rule "Concede desconto de 20% quando o comprador tiver acima de 60 anos"
 no-loop true
     when
         exists Cliente( idade > 60 )
-//        $compra: Compra( $cliente == cliente )
+        $compra: Compra( )
     then
         System.out.println("ACIONOU A REGRA");
         modify( $compra ){
