@@ -4,7 +4,7 @@ rule "Concede desconto de 20% quando o comprador tiver acima de 60 anos"
 //ruleflow-group "desconto-por-idade"
 no-loop true
     when
-        $compra: Compra( )
+        $compra: Compra($cliente : cliente )
     then
         System.out.println("ACIONOU A REGRA");
         modify( $compra ){
