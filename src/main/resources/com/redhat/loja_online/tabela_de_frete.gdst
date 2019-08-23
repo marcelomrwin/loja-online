@@ -6,7 +6,7 @@
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>261</width>
+    <width>513</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols>
@@ -301,7 +301,7 @@
   <actionCols>
     <set-field-col52>
       <typedDefaultValue>
-        <valueString>100</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
@@ -311,7 +311,7 @@
       <boundName>$compra</boundName>
       <factField>frete</factField>
       <type>Double</type>
-      <valueList>0, 100, 160, 50, 80</valueList>
+      <valueList>0, 50, 80, 90, 100, 160 </valueList>
       <update>true</update>
     </set-field-col52>
   </actionCols>
@@ -357,7 +357,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Cliente Nivel 1 Paga Frete 100</valueString>
+        <valueString>Valor total entre 0 e 100 para clientes nivel 1,2,3 pagam frete integral</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -368,7 +368,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -379,6 +379,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueNumeric class="double">100.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
@@ -407,7 +408,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Cliente Nivel 2 Paga Frete 75</valueString>
+        <valueString>entre 101 e 500 pagam 80 para clientes nivel 1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -418,23 +419,24 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">0.0</valueNumeric>
+        <valueNumeric class="double">101.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="double">500.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -444,7 +446,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>80</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -457,7 +459,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Cliente Nivel 3 Paga Frete 50</valueString>
+        <valueString>Desconto para os CEPs</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -468,7 +470,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -484,17 +486,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>50000000</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>51000000</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>90</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -507,7 +509,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Cliente Nivel 4 Paga Frete 25</valueString>
+        <valueString>Acréscimo para os CEPs</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -518,7 +520,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -534,17 +536,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>52000000</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>54999999</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>160</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -557,7 +559,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Cliente Nivel 5 Não Paga Frete</valueString>
+        <valueString>Cliente Nivel 4 paga frete de 50</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -568,7 +570,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -594,7 +596,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>50</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
