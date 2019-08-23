@@ -2,11 +2,11 @@
   <tableName>tabela_de_frete</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>261</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -23,7 +23,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Cliente</header>
           <constraintValueType>1</constraintValueType>
           <factField>cliente</factField>
@@ -48,7 +48,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Nivel</header>
           <constraintValueType>1</constraintValueType>
           <factField>nivel</factField>
@@ -71,7 +71,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>Valor do Frete</header>
       <boundName>$compra</boundName>
       <factField>frete</factField>
@@ -115,13 +115,13 @@
   <data>
     <list>
       <value>
-        <valueNumeric>1</valueNumeric>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Cliente Nivel 1 Paga Frete 100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -131,17 +131,22 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value>
+        <valueNumeric class="double">100.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
-        <valueNumeric>2</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Cliente Nivel 2 Paga Frete 75</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -151,17 +156,22 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value>
+        <valueNumeric class="double">75.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
-        <valueNumeric>3</valueNumeric>
+        <valueNumeric class="int">3</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Cliente Nivel 3 Paga Frete 50</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -171,17 +181,22 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value>
+        <valueNumeric class="double">50.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
-        <valueNumeric>4</valueNumeric>
+        <valueNumeric class="int">4</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Cliente Nivel 4 Paga Frete 25</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -191,17 +206,22 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../actionCols/set-field-col52/typedDefaultValue"/>
+      <value>
+        <valueNumeric class="double">25.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
     </list>
     <list>
       <value>
-        <valueNumeric>5</valueNumeric>
+        <valueNumeric class="int">5</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Cliente Nivel 5 Não paga Frete</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
