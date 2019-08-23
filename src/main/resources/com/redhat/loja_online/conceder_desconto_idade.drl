@@ -8,7 +8,7 @@ no-loop
         $compra: Compra( $cliente == cliente )
     then
         modify( $compra ){
-        	setValorTotal( 0.0);
+        	aplicarDescontoPercentual(20.0);
         }
 end
 
