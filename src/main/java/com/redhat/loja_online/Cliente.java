@@ -6,12 +6,58 @@ package com.redhat.loja_online;
 
 public class Cliente implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Cliente() {
-    }
+	@org.kie.api.definition.type.Label(value = "Nome")
+	private java.lang.String nome;
+	@org.kie.api.definition.type.Label(value = "Idade")
+	private java.lang.Integer idade;
+	@org.kie.api.definition.type.Label(value = "Nivel")
+	private java.lang.Integer nivel;
+	@org.kie.api.definition.type.Label(value = "Endereço")
+	private com.redhat.loja_online.Endereco endereco;
 
+	public Cliente() {
+	}
 
+	public java.lang.String getNome() {
+		return this.nome;
+	}
 
+	public void setNome(java.lang.String nome) {
+		this.nome = nome;
+	}
+
+	public java.lang.Integer getIdade() {
+		return this.idade;
+	}
+
+	public void setIdade(java.lang.Integer idade) {
+		this.idade = idade;
+	}
+
+	public java.lang.Integer getNivel() {
+		return this.nivel;
+	}
+
+	public void setNivel(java.lang.Integer nivel) {
+		this.nivel = nivel;
+	}
+
+	public com.redhat.loja_online.Endereco getEndereco() {
+		return this.endereco;
+	}
+
+	public void setEndereco(com.redhat.loja_online.Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	public Cliente(java.lang.String nome, java.lang.Integer idade,
+			java.lang.Integer nivel, com.redhat.loja_online.Endereco endereco) {
+		this.nome = nome;
+		this.idade = idade;
+		this.nivel = nivel;
+		this.endereco = endereco;
+	}
 
 }
