@@ -6,12 +6,59 @@ package com.redhat.loja_online;
 
 public class ProdutoCompra implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ProdutoCompra() {
-    }
+	@org.kie.api.definition.type.Label(value = "Produto")
+	private com.redhat.loja_online.Produto produto;
+	@org.kie.api.definition.type.Label(value = "Quantidade")
+	private java.lang.Integer quantidade;
+	@org.kie.api.definition.type.Label(value = "Desconto")
+	private java.lang.Double desconto;
+	@org.kie.api.definition.type.Label(value = "Valor Total")
+	private java.lang.Double valorTotal;
 
+	public ProdutoCompra() {
+	}
 
+	public com.redhat.loja_online.Produto getProduto() {
+		return this.produto;
+	}
 
+	public void setProduto(com.redhat.loja_online.Produto produto) {
+		this.produto = produto;
+	}
+
+	public java.lang.Integer getQuantidade() {
+		return this.quantidade;
+	}
+
+	public void setQuantidade(java.lang.Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public java.lang.Double getDesconto() {
+		return this.desconto;
+	}
+
+	public void setDesconto(java.lang.Double desconto) {
+		this.desconto = desconto;
+	}
+
+	public java.lang.Double getValorTotal() {
+		return this.valorTotal;
+	}
+
+	public void setValorTotal(java.lang.Double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+
+	public ProdutoCompra(com.redhat.loja_online.Produto produto,
+			java.lang.Integer quantidade, java.lang.Double desconto,
+			java.lang.Double valorTotal) {
+		this.produto = produto;
+		this.quantidade = quantidade;
+		this.desconto = desconto;
+		this.valorTotal = valorTotal;
+	}
 
 }
