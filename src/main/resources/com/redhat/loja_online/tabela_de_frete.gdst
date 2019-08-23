@@ -57,7 +57,7 @@
                 </expression>
                 <parameters/>
                 <factType>Cliente</factType>
-                <fieldName>nivel</fieldName>
+                <fieldName>$nivel</fieldName>
                 <fieldType>Integer</fieldType>
                 <parent class="org.drools.workbench.models.datamodel.rule.SingleFieldConstraint">
                   <operator>!= null</operator>
@@ -88,7 +88,7 @@
           <width>100</width>
           <header>Nivel do Cliente</header>
           <constraintValueType>1</constraintValueType>
-          <factField>nivel</factField>
+          <factField>$nivel</factField>
           <fieldType>Integer</fieldType>
           <operator>in</operator>
           <parameters/>
