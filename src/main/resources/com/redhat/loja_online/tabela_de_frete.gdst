@@ -189,7 +189,7 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>CEPInicial</value>
-                <operator>&lt;=</operator>
+                <operator>&gt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
@@ -226,7 +226,7 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>CEPFinal</value>
-                <operator>&gt;=</operator>
+                <operator>&lt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
@@ -278,7 +278,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>cep</factField>
           <fieldType>Integer</fieldType>
-          <operator>&lt;=</operator>
+          <operator>&gt;=</operator>
           <parameters/>
           <varName>CEPInicial</varName>
           <factType>Compra</factType>
@@ -290,7 +290,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>cep</factField>
           <fieldType>Integer</fieldType>
-          <operator>&gt;=</operator>
+          <operator>&lt;=</operator>
           <parameters/>
           <varName>CEPFinal</varName>
           <factType>Compra</factType>
