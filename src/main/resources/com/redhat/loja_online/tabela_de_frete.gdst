@@ -23,6 +23,18 @@
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
     </attribute-column52>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueString>calculo-de-frete</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>true</hideColumn>
+      <width>100</width>
+      <attribute>ruleflow-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
   </attributeCols>
   <conditionPatterns>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
@@ -368,6 +380,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>calculo-de-frete</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -416,6 +433,11 @@
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>calculo-de-frete</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -470,6 +492,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>calculo-de-frete</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>1,2,3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -517,6 +544,11 @@
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>calculo-de-frete</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -570,6 +602,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>calculo-de-frete</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -617,6 +654,11 @@
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>calculo-de-frete</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
