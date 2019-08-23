@@ -3,7 +3,7 @@
     <simulationDescriptor>
       <factMappings>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements/>
           <expressionIdentifier>
             <name>Index</name>
             <type>OTHER</type>
@@ -16,7 +16,7 @@
           <factAlias>#</factAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements/>
           <expressionIdentifier>
             <name>Description</name>
             <type>OTHER</type>
@@ -29,51 +29,190 @@
           <factAlias>Scenario description</factAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Compra</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>cliente</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>idade</step>
+            </ExpressionElement>
+          </expressionElements>
           <expressionIdentifier>
-            <name>0|1</name>
+            <name>1566579124225</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>Empty</name>
-            <className>java.lang.Void</className>
+            <name>1566579124225</name>
+            <className>com.redhat.loja_online.Compra</className>
           </factIdentifier>
-          <className>java.lang.Void</className>
-          <factAlias>INSTANCE 1</factAlias>
-          <expressionAlias>PROPERTY 1</expressionAlias>
+          <className>java.lang.Integer</className>
+          <factAlias>Compra</factAlias>
+          <expressionAlias>cliente.idade</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Compra</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>valorTotal</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1566579172996</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Double</className>
+          <factAlias>Compra</factAlias>
+          <expressionAlias>valorTotal</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Compra</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>valorTotal</step>
+            </ExpressionElement>
+          </expressionElements>
           <expressionIdentifier>
             <name>0|2</name>
             <type>EXPECT</type>
           </expressionIdentifier>
           <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>java.lang.Void</className>
-          <factAlias>INSTANCE 2</factAlias>
-          <expressionAlias>PROPERTY 2</expressionAlias>
+          <className>java.lang.Double</className>
+          <factAlias>Compra</factAlias>
+          <expressionAlias>valorTotal</expressionAlias>
         </FactMapping>
       </factMappings>
       <type>RULE</type>
       <skipFromBuild>false</skipFromBuild>
     </simulationDescriptor>
-    <scenarios class="linked-list">
+    <scenarios>
       <Scenario>
         <factMappingValues>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">Compra com cliente acima de 60 anos</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">1</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>1566579124225</name>
+              <className>com.redhat.loja_online.Compra</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1566579124225</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">65</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[3]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1566579172996</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">100</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[3]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>0|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">80</rawValue>
           </FactMappingValue>
         </factMappingValues>
-        <simulationDescriptor reference="../../../simulationDescriptor"/>
+        <simulationDescriptor>
+          <factMappings>
+            <FactMapping>
+              <expressionElements/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
+              <className>java.lang.Integer</className>
+              <factAlias>#</factAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue/factIdentifier"/>
+              <className>java.lang.String</className>
+              <factAlias>Scenario description</factAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>cliente</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>idade</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
+              <className>java.lang.Integer</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>cliente.idade</expressionAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>valorTotal</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
+              <className>java.lang.Double</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>valorTotal</expressionAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>valorTotal</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
+              <className>java.lang.Double</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>valorTotal</expressionAlias>
+            </FactMapping>
+          </factMappings>
+          <type>RULE</type>
+          <skipFromBuild>false</skipFromBuild>
+        </simulationDescriptor>
       </Scenario>
     </scenarios>
   </simulation>
