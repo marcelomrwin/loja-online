@@ -18,17 +18,17 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
-            <valueString></valueString>
+            <valueString>cliente</valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>Cliente</header>
-          <constraintValueType>1</constraintValueType>
+          <constraintValueType>3</constraintValueType>
           <factField>cliente</factField>
           <fieldType>Cliente</fieldType>
-          <operator>!= null</operator>
+          <operator></operator>
           <parameters/>
           <binding>$cliente</binding>
         </condition-column52>
@@ -129,9 +129,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>cliente</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
