@@ -6,12 +6,70 @@ package com.redhat.loja_online;
 
 public class Endereco implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Endereco() {
-    }
+	@org.kie.api.definition.type.Label(value = "Logradouro")
+	private java.lang.String logradouro;
+	@org.kie.api.definition.type.Label(value = "Bairro")
+	private java.lang.String bairro;
+	@org.kie.api.definition.type.Label(value = "Cidade")
+	private java.lang.String cidade;
+	@org.kie.api.definition.type.Label(value = "Estado")
+	private java.lang.String estado;
+	@org.kie.api.definition.type.Label(value = "CEP")
+	private java.lang.String cep;
 
+	public Endereco() {
+	}
 
+	public java.lang.String getLogradouro() {
+		return this.logradouro;
+	}
 
+	public void setLogradouro(java.lang.String logradouro) {
+		this.logradouro = logradouro;
+	}
+
+	public java.lang.String getBairro() {
+		return this.bairro;
+	}
+
+	public void setBairro(java.lang.String bairro) {
+		this.bairro = bairro;
+	}
+
+	public java.lang.String getCidade() {
+		return this.cidade;
+	}
+
+	public void setCidade(java.lang.String cidade) {
+		this.cidade = cidade;
+	}
+
+	public java.lang.String getEstado() {
+		return this.estado;
+	}
+
+	public void setEstado(java.lang.String estado) {
+		this.estado = estado;
+	}
+
+	public java.lang.String getCep() {
+		return this.cep;
+	}
+
+	public void setCep(java.lang.String cep) {
+		this.cep = cep;
+	}
+
+	public Endereco(java.lang.String logradouro, java.lang.String bairro,
+			java.lang.String cidade, java.lang.String estado,
+			java.lang.String cep) {
+		this.logradouro = logradouro;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.cep = cep;
+	}
 
 }
