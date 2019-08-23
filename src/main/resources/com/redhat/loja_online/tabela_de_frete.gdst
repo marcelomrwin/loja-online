@@ -44,15 +44,15 @@
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
-          <hideColumn>true</hideColumn>
+          <hideColumn>false</hideColumn>
           <width>100</width>
           <header>Cliente</header>
           <constraintValueType>1</constraintValueType>
           <factField>cliente</factField>
           <fieldType>Cliente</fieldType>
-          <operator></operator>
+          <operator>!= null</operator>
           <parameters/>
-          <binding></binding>
+          <binding>cliente</binding>
         </condition-column52>
       </conditions>
       <window>
