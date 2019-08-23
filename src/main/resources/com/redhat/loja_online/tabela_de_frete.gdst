@@ -28,7 +28,7 @@
           <constraintValueType>3</constraintValueType>
           <factField>cliente</factField>
           <fieldType>Cliente</fieldType>
-          <operator></operator>
+          <operator>==</operator>
           <parameters/>
           <binding>$cliente</binding>
         </condition-column52>
