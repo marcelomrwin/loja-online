@@ -2,13 +2,12 @@ package com.redhat.loja_online;
 
 rule "Concede desconto de 20% quando o comprador tiver acima de 60 anos"
 ruleflow-group "desconto-por-idade"
-no-loop 
+no-loop true
     when
-        $cliente : Cliente( idade > 60 )
-        $compra: Compra( $cliente == cliente )
+        $compra: Compra(cliente.idade > 60)
     then
         modify( $compra ){
-        	setValorTotal( 0.0);
+        	aplicarDescontoPercentual(20.0);
         }
 end
 
