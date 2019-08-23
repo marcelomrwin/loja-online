@@ -8,16 +8,16 @@ public class Endereco implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Logradouro")
+	@org.kie.api.definition.type.Label("Logradouro")
 	private java.lang.String logradouro;
-	@org.kie.api.definition.type.Label(value = "Bairro")
+	@org.kie.api.definition.type.Label("Bairro")
 	private java.lang.String bairro;
-	@org.kie.api.definition.type.Label(value = "Cidade")
+	@org.kie.api.definition.type.Label("Cidade")
 	private java.lang.String cidade;
-	@org.kie.api.definition.type.Label(value = "Estado")
+	@org.kie.api.definition.type.Label("Estado")
 	private java.lang.String estado;
-	@org.kie.api.definition.type.Label(value = "CEP")
-	private java.lang.String cep;
+	@org.kie.api.definition.type.Label("CEP")
+	private Integer cep;
 
 	public Endereco() {
 	}
@@ -54,17 +54,17 @@ public class Endereco implements java.io.Serializable {
 		this.estado = estado;
 	}
 
-	public java.lang.String getCep() {
+	public java.lang.Integer getCep() {
 		return this.cep;
 	}
 
-	public void setCep(java.lang.String cep) {
+	public void setCep(java.lang.Integer cep) {
 		this.cep = cep;
 	}
 
 	public Endereco(java.lang.String logradouro, java.lang.String bairro,
 			java.lang.String cidade, java.lang.String estado,
-			java.lang.String cep) {
+			java.lang.Integer cep) {
 		this.logradouro = logradouro;
 		this.bairro = bairro;
 		this.cidade = cidade;
