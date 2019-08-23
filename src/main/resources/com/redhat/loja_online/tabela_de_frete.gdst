@@ -30,7 +30,7 @@
           <fieldType>Cliente</fieldType>
           <operator>==</operator>
           <parameters/>
-          <binding>$cliente</binding>
+          <binding></binding>
         </condition-column52>
       </conditions>
       <window>
