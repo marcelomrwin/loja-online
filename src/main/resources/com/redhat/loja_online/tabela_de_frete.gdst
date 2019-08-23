@@ -76,7 +76,7 @@
       <boundName>$compra</boundName>
       <factField>frete</factField>
       <type>Double</type>
-      <update>false</update>
+      <update>true</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
