@@ -89,6 +89,7 @@
           <expressionAlias>valorTotal</expressionAlias>
         </FactMapping>
       </factMappings>
+      <dmoSession>kiesession</dmoSession>
       <type>RULE</type>
       <ruleFlowGroup>desconto-por-idade</ruleFlowGroup>
       <skipFromBuild>false</skipFromBuild>
