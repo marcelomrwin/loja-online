@@ -113,6 +113,7 @@
           <expressionAlias>frete</expressionAlias>
         </FactMapping>
       </factMappings>
+      <dmoSession>kieful</dmoSession>
       <type>RULE</type>
       <ruleFlowGroup>calculo-de-frete</ruleFlowGroup>
       <skipFromBuild>false</skipFromBuild>
