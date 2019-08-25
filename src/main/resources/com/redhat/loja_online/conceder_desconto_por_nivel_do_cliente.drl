@@ -6,6 +6,6 @@ rule "conceder_desconto_por_nivel_cliente"
 		compra : Compra( cliente : cliente, cliente.nivel == 1)
 	then
     	modify(compra){
-    	    setTotalDescontos(compra.getTotalDescontos() + compra.getValorTotal() * 0.5);
+    	    setTotalDescontos(compra.getTotalDescontos() + compra.getValorTotal() * 0.05);
     	}
 end
