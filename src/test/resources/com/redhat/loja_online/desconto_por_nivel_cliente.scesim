@@ -127,24 +127,6 @@
           <factAlias>Compra</factAlias>
           <expressionAlias>totalDescontos</expressionAlias>
         </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>Compra</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>valorTotal</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1566768778884</name>
-            <type>EXPECT</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>java.lang.Double</className>
-          <factAlias>Compra</factAlias>
-          <expressionAlias>valorTotal</expressionAlias>
-        </FactMapping>
       </factMappings>
       <dmoSession>kieful</dmoSession>
       <type>RULE</type>
@@ -162,6 +144,7 @@
               <name>Description</name>
               <type>OTHER</type>
             </expressionIdentifier>
+            <rawValue class="string">cliente nivel 1 comprando acima de 10 itens ganha desconto</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -215,15 +198,7 @@
               <name>0|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">5</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../FactMappingValue[3]/factIdentifier"/>
-            <expressionIdentifier>
-              <name>1566768778884</name>
-              <type>EXPECT</type>
-            </expressionIdentifier>
-            <rawValue class="string">95</rawValue>
+            <rawValue class="string">0.05</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
@@ -332,7 +307,10 @@
                   <step>valorTotal</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[8]/expressionIdentifier"/>
+              <expressionIdentifier>
+                <name>1566768778884</name>
+                <type>EXPECT</type>
+              </expressionIdentifier>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/factIdentifier"/>
               <className>java.lang.Double</className>
               <factAlias>Compra</factAlias>
@@ -349,6 +327,7 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue/factIdentifier"/>
             <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue/expressionIdentifier"/>
+            <rawValue class="string">Cliente nivel 1 com 10 itens ou menos de não recebe desconto </rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[2]/factIdentifier"/>
@@ -378,12 +357,7 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
-            <rawValue class="string">5</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[8]/expressionIdentifier"/>
-            <rawValue class="string">95</rawValue>
+            <rawValue class="string">0.0</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../Scenario/simulationDescriptor"/>
