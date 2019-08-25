@@ -70,7 +70,7 @@ public class Compra implements java.io.Serializable {
 	}
 
 	public void setTotalDescontos(java.lang.Double totalDescontos) {
-		adicionarDescontoPercentual(totalDescontos);
+		this.totalDescontos = totalDescontos;
 	}
 
 	public Compra(com.redhat.loja_online.Cliente cliente,
@@ -91,12 +91,12 @@ public class Compra implements java.io.Serializable {
 		this.valorTotal = this.valorTotal - (percent * this.valorTotal);
 	}
 	
-	public void adicionarDescontoPercentual(Double percentual){
+	public void setAdicionarDescontoPercentual(Double percentual){
 	    if (this.totalDescontos==null)this.totalDescontos = 0.0;
 	    this.totalDescontos+= percentual;
 	}
 	
-	public void removerDescontoPercentual(Double percentual){
+	public void setRemoverDescontoPercentual(Double percentual){
 	    if (this.totalDescontos==null)this.totalDescontos = 0.0;
 	    else
 	    this.totalDescontos-=percentual;
