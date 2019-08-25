@@ -86,17 +86,19 @@ public class Compra implements java.io.Serializable {
 	}
 
 	
-	public void aplicarDescontoPercentual(Double percentual) {
+	public void aplicarDescontoPercentualTotal(Double percentual) {
 		double percent = percentual/100;
 		this.valorTotal = this.valorTotal - (percent * this.valorTotal);
 	}
 	
-	public java.lang.Integer quantidadeDeItens() {
-		Integer qtd = 0;
-		if (this.produtos != null && !this.produtos.isEmpty())
-			for (ProdutoCompra produtoCompra : produtos) {
-				qtd += produtoCompra.getQuantidade();
-			}
-		return qtd;
+	public void adicionarDescontoPercentual(Double percentual){
+	    if (this.totalDescontos==null)this.totalDescontos = 0.0;
+	    this.totalDescontos+= percentual;
+	}
+	
+	public void removerDescontoPercentual(Double percentual){
+	    if (this.totalDescontos==null)this.totalDescontos = 0.0;
+	    else
+	    this.totalDescontos-=percentual;
 	}
 }
