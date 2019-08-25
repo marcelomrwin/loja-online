@@ -80,8 +80,40 @@
         <constraintList>
           <constraints>
             <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-              <value>Quantidade</value>
+              <value>QuantidadeMinima</value>
               <operator>&gt;=</operator>
+              <constraintValueType>7</constraintValueType>
+              <expression>
+                <parts/>
+                <index>2147483647</index>
+              </expression>
+              <parameters/>
+              <factType>Number</factType>
+              <fieldName>intValue</fieldName>
+              <fieldType>int</fieldType>
+              <expLeftSide>
+                <parts>
+                  <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <next class="method">
+                      <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                      <name>intValue</name>
+                      <classType>int</classType>
+                      <genericType>Integer</genericType>
+                      <params/>
+                    </next>
+                    <name>Number</name>
+                    <classType>Number</classType>
+                    <genericType>Number</genericType>
+                    <factType>Number</factType>
+                  </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                  <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                </parts>
+                <index>2147483647</index>
+              </expLeftSide>
+            </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+            <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <value>QuantidadeMaxima</value>
+              <operator>&lt;</operator>
               <constraintValueType>7</constraintValueType>
               <expression>
                 <parts/>
@@ -200,6 +232,20 @@
       </list>
     </entry>
     <entry>
+      <string>QuantidadeMaxima</string>
+      <list>
+        <string>19</string>
+        <string></string>
+        <string>19</string>
+        <string></string>
+        <string>19</string>
+        <string></string>
+        <string>19</string>
+        <string></string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>3</string>
@@ -214,6 +260,20 @@
       </list>
     </entry>
     <entry>
+      <string>QuantidadeMinima</string>
+      <list>
+        <string>10</string>
+        <string>20</string>
+        <string>10</string>
+        <string>20</string>
+        <string>10</string>
+        <string>20</string>
+        <string>10</string>
+        <string>20</string>
+        <string>1</string>
+      </list>
+    </entry>
+    <entry>
       <string>Nivel</string>
       <list>
         <string>1</string>
@@ -225,20 +285,6 @@
         <string>4</string>
         <string>4</string>
         <string>5</string>
-      </list>
-    </entry>
-    <entry>
-      <string>Quantidade</string>
-      <list>
-        <string>10</string>
-        <string>20</string>
-        <string>10</string>
-        <string>20</string>
-        <string>10</string>
-        <string>20</string>
-        <string>10</string>
-        <string>20</string>
-        <string>0</string>
       </list>
     </entry>
   </table>
