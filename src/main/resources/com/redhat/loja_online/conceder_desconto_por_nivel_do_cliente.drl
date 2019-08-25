@@ -3,7 +3,7 @@ package com.redhat.loja_online;
 rule "conceder_desconto_por_nivel_cliente"
 
 	when
-		compra : Compra( cliente : cliente, cliente.nivel == 1, quantidadeDeItens > 10)
+		compra : Compra( cliente : cliente, cliente.nivel == 1)
 	then
     	modify(compra){
     	    setTotalDescontos(compra.getTotalDescontos() + compra.getValorTotal() * 0.5);
