@@ -130,6 +130,7 @@
       </factMappings>
       <dmoSession>kieful</dmoSession>
       <type>RULE</type>
+      <ruleFlowGroup>nivel_qtd_itens</ruleFlowGroup>
       <skipFromBuild>false</skipFromBuild>
     </simulationDescriptor>
     <scenarios>
