@@ -146,6 +146,7 @@
           <expressionAlias>valorTotal</expressionAlias>
         </FactMapping>
       </factMappings>
+      <dmoSession>kieful</dmoSession>
       <type>RULE</type>
       <skipFromBuild>false</skipFromBuild>
     </simulationDescriptor>
