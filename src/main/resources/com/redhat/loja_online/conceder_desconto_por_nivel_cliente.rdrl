@@ -1,9 +1,0 @@
-package com.redhat.loja_online;
-
-import java.lang.Number;
-
-rule "conceder_desconto_por_nivel_cliente"
-	dialect "mvel"
-	when
-	then
-end
