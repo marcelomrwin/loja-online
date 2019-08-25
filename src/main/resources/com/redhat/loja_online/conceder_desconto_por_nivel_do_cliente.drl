@@ -3,10 +3,7 @@ package com.redhat.loja_online;
 rule "conceder_desconto_por_nivel_cliente"
 
 	when
-		compra : Compra( cliente : cliente, cliente.nivel == 1)
-        $total : Number($total > 10) from accumulate(
-                 ProdutoCompra( $q : quantidade ),
-                 sum( $q ) )
+		compra : Compra( cliente : cliente, cliente.nivel == 1, quantidadeDeItens > 10)
 	then
     	modify(compra){
     	    setTotalDescontos(compra.getTotalDescontos() + compra.getValorTotal() * 0.5);
