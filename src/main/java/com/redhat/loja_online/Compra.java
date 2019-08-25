@@ -93,9 +93,10 @@ public class Compra implements java.io.Serializable {
 	
 	public java.lang.Integer quantidadeDeItens() {
 		Integer qtd = 0;
-		for (com.redhat.loja_online.ProdutoCompra produtoCompra : produtos) {
-			qtd += produtoCompra.getQuantidade();
-		}
+		if (this.produtos != null && !this.produtos.isEmpty())
+			for (ProdutoCompra produtoCompra : produtos) {
+				qtd += produtoCompra.getQuantidade();
+			}
 		return qtd;
 	}
 }
