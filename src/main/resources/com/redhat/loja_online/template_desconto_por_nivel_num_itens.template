@@ -25,7 +25,7 @@
             <fieldType>Cliente</fieldType>
           </fieldConstraint>
           <fieldConstraint>
-            <value>nivel</value>
+            <value>Nivel</value>
             <operator>==</operator>
             <constraintValueType>7</constraintValueType>
             <expression>
@@ -76,7 +76,7 @@
         <constraintList>
           <constraints>
             <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-              <value>$quantidade</value>
+              <value>Quantidade</value>
               <operator>&gt;</operator>
               <constraintValueType>7</constraintValueType>
               <expression>
@@ -158,7 +158,19 @@
       <function>sum($q)</function>
     </fromAccumulateCompositePattern>
   </lhs>
-  <rhs/>
+  <rhs>
+    <setField>
+      <fieldValues>
+        <fieldValue>
+          <field>totalDescontos</field>
+          <value>Desconto</value>
+          <nature>7</nature>
+          <type>Double</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>compra</variable>
+    </setField>
+  </rhs>
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
@@ -170,24 +182,62 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>Desconto</string>
+      <list>
+        <string>0.05</string>
+        <string>0.1</string>
+        <string>0.1</string>
+        <string>0.15</string>
+        <string>0.15</string>
+        <string>0.2</string>
+        <string>0.2</string>
+        <string>0.25</string>
+        <string>0.25</string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>3</string>
-      </list>
-    </entry>
-    <entry>
-      <string>$quantidade</string>
-      <list>
+        <string>4</string>
+        <string>5</string>
+        <string>6</string>
+        <string>7</string>
+        <string>8</string>
+        <string>9</string>
         <string>10</string>
+        <string>11</string>
       </list>
     </entry>
     <entry>
-      <string>nivel</string>
+      <string>Nivel</string>
       <list>
         <string>1</string>
+        <string>1</string>
+        <string>2</string>
+        <string>2</string>
+        <string>3</string>
+        <string>3</string>
+        <string>4</string>
+        <string>4</string>
+        <string>5</string>
+      </list>
+    </entry>
+    <entry>
+      <string>Quantidade</string>
+      <list>
+        <string>10</string>
+        <string>20</string>
+        <string>10</string>
+        <string>20</string>
+        <string>10</string>
+        <string>20</string>
+        <string>10</string>
+        <string>20</string>
+        <string>0</string>
       </list>
     </entry>
   </table>
-  <idCol>3</idCol>
-  <rowsCount>1</rowsCount>
+  <idCol>11</idCol>
+  <rowsCount>9</rowsCount>
 </rule>
