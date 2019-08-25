@@ -101,6 +101,24 @@
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
+            <name>1566766712345</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Double</className>
+          <factAlias>Compra</factAlias>
+          <expressionAlias>totalDescontos</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Compra</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>totalDescontos</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
             <name>0|2</name>
             <type>EXPECT</type>
           </expressionIdentifier>
@@ -202,6 +220,11 @@
               <type>EXPECT</type>
             </expressionIdentifier>
             <rawValue class="string">95</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <rawValue class="string">0</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
