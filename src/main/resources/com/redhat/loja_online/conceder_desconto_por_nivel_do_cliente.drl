@@ -1,14 +1,14 @@
 package com.redhat.loja_online;
 
 rule "conceder_desconto_por_nivel_cliente"
-	dialect "mvel"
+
 	when
 		compra : Compra( cliente : cliente, cliente.nivel == 1)
-
-$total : Number($total > 10) from accumulate(
-         ProdutoCompra( $q : quantidade ),
-         sum( $q ) )
-    
+        $total : Number($total > 10) from accumulate(
+                 ProdutoCompra( $q : quantidade ),
+                 sum( $q ) )
 	then
-	System.out.println("Total de Itens - " +$total);
+    	modify(compra){
+    	    setTotalDescontos(compra.getTotalDescontos() + compra.getValorTotal() * 0.5);
+    	}
 end
