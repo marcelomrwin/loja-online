@@ -362,6 +362,177 @@
         </factMappingValues>
         <simulationDescriptor reference="../../Scenario/simulationDescriptor"/>
       </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">cliente nivel 1 comprando a partir de 20 itens tem 10% de desconto</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1566768621914</name>
+              <className>com.redhat.loja_online.Compra</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1566768621914</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">0</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1566768639853</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">100</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1566768659053</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">[{&quot;desconto&quot;:&quot;0&quot;, &quot;quantidade&quot;:&quot;25&quot;, &quot;valorTotal&quot;:&quot;250&quot;, &quot;produto&quot;:{&quot;codigo&quot;:&quot;123&quot;, &quot;descricao&quot;:&quot;teste&quot;, &quot;valorUnitario&quot;:&quot;10&quot;}}]</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1566768743441</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">1</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>0|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">0.10</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">3</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+        <simulationDescriptor>
+          <factMappings>
+            <FactMapping>
+              <expressionElements/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[7]/factIdentifier"/>
+              <className>java.lang.Integer</className>
+              <factAlias>#</factAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue/factIdentifier"/>
+              <className>java.lang.String</className>
+              <factAlias>Scenario description</factAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>totalDescontos</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
+              <className>java.lang.Double</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>totalDescontos</expressionAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>valorTotal</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[3]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
+              <className>java.lang.Double</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>valorTotal</expressionAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>produtos</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[4]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
+              <className>java.util.List</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>produtos</expressionAlias>
+              <genericTypes>
+                <string>com.redhat.loja_online.ProdutoCompra</string>
+              </genericTypes>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>cliente</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>nivel</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[5]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
+              <className>java.lang.Integer</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>cliente.nivel</expressionAlias>
+            </FactMapping>
+            <FactMapping>
+              <expressionElements>
+                <ExpressionElement>
+                  <step>Compra</step>
+                </ExpressionElement>
+                <ExpressionElement>
+                  <step>totalDescontos</step>
+                </ExpressionElement>
+              </expressionElements>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
+              <className>java.lang.Double</className>
+              <factAlias>Compra</factAlias>
+              <expressionAlias>totalDescontos</expressionAlias>
+            </FactMapping>
+          </factMappings>
+          <dmoSession>kieful</dmoSession>
+          <type>RULE</type>
+          <skipFromBuild>false</skipFromBuild>
+        </simulationDescriptor>
+      </Scenario>
     </scenarios>
   </simulation>
   <imports>
