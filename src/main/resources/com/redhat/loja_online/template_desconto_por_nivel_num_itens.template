@@ -50,6 +50,18 @@
             <fieldName>produtos</fieldName>
             <fieldType>Collection</fieldType>
           </fieldConstraint>
+          <fieldConstraint>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <fieldBinding>$totalDesconto</fieldBinding>
+            <factType>Compra</factType>
+            <fieldName>totalDescontos</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
         </constraints>
       </constraintList>
       <factType>Compra</factType>
