@@ -6,6 +6,10 @@
       <attributeName>no-loop</attributeName>
       <value>true</value>
     </attribute>
+    <attribute>
+      <attributeName>lock-on-active</attributeName>
+      <value>true</value>
+    </attribute>
   </attributes>
   <metadataList/>
   <lhs>
