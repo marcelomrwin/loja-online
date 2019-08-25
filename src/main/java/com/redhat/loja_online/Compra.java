@@ -70,7 +70,7 @@ public class Compra implements java.io.Serializable {
 	}
 
 	public void setTotalDescontos(java.lang.Double totalDescontos) {
-		this.totalDescontos = totalDescontos;
+		adicionarDescontoPercentual(totalDescontos);
 	}
 
 	public Compra(com.redhat.loja_online.Cliente cliente,
