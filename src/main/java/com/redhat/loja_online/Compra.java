@@ -90,4 +90,12 @@ public class Compra implements java.io.Serializable {
 		double percent = percentual/100;
 		this.valorTotal = this.valorTotal - (percent * this.valorTotal);
 	}
+	
+	public java.lang.Integer quantidadeDeItens() {
+		Integer qtd = 0;
+		for (com.redhat.loja_online.ProdutoCompra produtoCompra : produtos) {
+			qtd += produtoCompra.getQuantidade();
+		}
+		return qtd;
+	}
 }
