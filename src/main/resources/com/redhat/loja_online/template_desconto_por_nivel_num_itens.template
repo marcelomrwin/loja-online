@@ -77,7 +77,7 @@
           <constraints>
             <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
               <value>Quantidade</value>
-              <operator>&gt;</operator>
+              <operator>&gt;=</operator>
               <constraintValueType>7</constraintValueType>
               <expression>
                 <parts/>
