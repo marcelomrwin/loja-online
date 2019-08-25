@@ -1,21 +1,181 @@
 <rule>
   <name>template_desconto_por_nivel_num_itens</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>no-loop</attributeName>
+      <value>true</value>
+    </attribute>
+  </attributes>
   <metadataList/>
-  <lhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <operator>!= null</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Compra</factType>
+            <fieldName>cliente</fieldName>
+            <fieldType>Cliente</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>nivel</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Cliente</factType>
+            <fieldName>nivel</fieldName>
+            <fieldType>Integer</fieldType>
+            <parent class="fieldConstraint" reference="../../fieldConstraint"/>
+          </fieldConstraint>
+          <fieldConstraint>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <fieldBinding>$produtos</fieldBinding>
+            <factType>Compra</factType>
+            <fieldName>produtos</fieldName>
+            <fieldType>Collection</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>Compra</factType>
+      <boundName>compra</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+    <fromAccumulateCompositePattern>
+      <factPattern>
+        <constraintList>
+          <constraints>
+            <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <value>$quantidade</value>
+              <operator>&gt;</operator>
+              <constraintValueType>7</constraintValueType>
+              <expression>
+                <parts/>
+                <index>2147483647</index>
+              </expression>
+              <parameters/>
+              <factType>Number</factType>
+              <fieldName>intValue</fieldName>
+              <fieldType>int</fieldType>
+              <expLeftSide>
+                <parts>
+                  <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <next class="method">
+                      <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                      <name>intValue</name>
+                      <classType>int</classType>
+                      <genericType>Integer</genericType>
+                      <params/>
+                    </next>
+                    <name>Number</name>
+                    <classType>Number</classType>
+                    <genericType>Number</genericType>
+                    <factType>Number</factType>
+                  </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                  <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                </parts>
+                <index>2147483647</index>
+              </expLeftSide>
+            </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+          </constraints>
+        </constraintList>
+        <factType>Number</factType>
+        <boundName>$total</boundName>
+        <isNegated>false</isNegated>
+        <window>
+          <parameters/>
+        </window>
+      </factPattern>
+      <expression>
+        <parts/>
+        <index>2147483647</index>
+      </expression>
+      <sourcePattern class="fromCompositePattern">
+        <factPattern>
+          <constraintList>
+            <constraints>
+              <fieldConstraint>
+                <constraintValueType>0</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <fieldBinding>$q</fieldBinding>
+                <factType>ProdutoCompra</factType>
+                <fieldName>quantidade</fieldName>
+                <fieldType>Integer</fieldType>
+              </fieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>ProdutoCompra</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </factPattern>
+        <expression>
+          <parts>
+            <org.drools.workbench.models.datamodel.rule.ExpressionFieldVariable>
+              <name>$produtos</name>
+              <classType>Collection</classType>
+              <genericType>Collection</genericType>
+            </org.drools.workbench.models.datamodel.rule.ExpressionFieldVariable>
+          </parts>
+          <index>2147483647</index>
+        </expression>
+      </sourcePattern>
+      <function>sum($q)</function>
+    </fromAccumulateCompositePattern>
+  </lhs>
   <rhs/>
   <imports>
-    <imports/>
+    <imports>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>java.lang.Number</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com.redhat.loja_online</packageName>
   <isNegated>false</isNegated>
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>3</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$quantidade</string>
+      <list>
+        <string>10</string>
+      </list>
+    </entry>
+    <entry>
+      <string>nivel</string>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>3</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
