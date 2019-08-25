@@ -7,7 +7,7 @@ no-loop true
         $compra: Compra(cliente.idade > 60)
     then
         modify( $compra ){
-        	aplicarDescontoPercentual(20.0);
+        	aplicarDescontoPercentualTotal(20.0);
         }
 end
 
