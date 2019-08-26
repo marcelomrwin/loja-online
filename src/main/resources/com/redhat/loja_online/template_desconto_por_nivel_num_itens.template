@@ -195,7 +195,7 @@
     </fromAccumulateCompositePattern>
   </lhs>
   <rhs>
-    <setField>
+    <modify>
       <fieldValues>
         <fieldValue>
           <field>totalDescontos</field>
@@ -205,7 +205,7 @@
         </fieldValue>
       </fieldValues>
       <variable>compra</variable>
-    </setField>
+    </modify>
   </rhs>
   <imports>
     <imports>
