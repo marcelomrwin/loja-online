@@ -198,10 +198,10 @@
     <setField>
       <fieldValues>
         <fieldValue>
-          <field>adicionarDescontoPercentual</field>
+          <field>totalDescontos</field>
           <value>Desconto</value>
           <nature>7</nature>
-          <type>void</type>
+          <type>Double</type>
         </fieldValue>
       </fieldValues>
       <variable>compra</variable>
