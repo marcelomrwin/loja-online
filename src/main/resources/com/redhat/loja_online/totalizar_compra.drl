@@ -6,11 +6,15 @@ ruleflow-group "calcular_total_compra"
 when
     $compra : Compra();
 then
+    System.out.println("chegou no metodo");
     Double total = 0.0;
-    for(int i=0;i<$compra.getProdutos().size();i++) {
+    System.out.println("Produtos "+$compra.getProdutos());
+    System.out.println("quantidade de produtos "+$compra.getProdutos().size());
+    for(int i=0; i < $compra.getProdutos().size();i++) {
 			ProdutoCompra pc = $compra.getProdutos().get(i);
+			System.out.println("Valor total "+pc.getValorTotal());
 			total+=pc.getValorTotal();
-		}
+	}
     System.out.println("passou pelo loop");
 	if ($compra.getTotalDescontos()>0.0) {
 		total-= ($compra.getTotalDescontos() * total );
