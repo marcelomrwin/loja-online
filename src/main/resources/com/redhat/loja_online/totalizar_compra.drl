@@ -1,2 +1,22 @@
 package com.redhat.loja_online;
 
+rule "totalizar compra"
+dialect "java"
+ruleflow-group "calcular_total_compra"
+when
+    $compra : Compra();
+then
+    Double total = 0.0;
+    for(int i=0;i<$compra.getProdutos().size();i++) {
+			ProdutoCompra pc = $compra.getProdutos().get(i);
+			total+=pc.getValorTotal();
+		}
+    System.out.println("passou pelo loop");
+	if ($compra.getTotalDescontos()>0.0) {
+		total-= ($compra.getTotalDescontos() * total );
+	}
+	total+=$compra.getFrete();
+    $compra.setValorTotal(total);
+    System.out.println("TOTAL DA COMPRA"+$compra.getValorTotal());
+    update($compra); 
+end
