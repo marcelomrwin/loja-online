@@ -13,6 +13,7 @@ then
 			total+=pc.getValorTotal();
 	}
     System.out.println("Total sem desconto "+total);
+    Systtem.out.println("Total de descontos "+$compra.getTotalDescontos());
 	if ($compra.getTotalDescontos()>0.0) {
 		total-= ($compra.getTotalDescontos() * total );
 	}
