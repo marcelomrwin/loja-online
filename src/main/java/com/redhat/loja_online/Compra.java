@@ -70,6 +70,7 @@ public class Compra implements java.io.Serializable {
 	}
 
 	public void setTotalDescontos(java.lang.Double totalDescontos) {
+	    System.out.println("MUDANDO VALOR DE DESCONTO, chegou ["+totalDescontos+"] anterior ["+totalDescontos+"]");
 		this.totalDescontos = totalDescontos;
 	}
 
