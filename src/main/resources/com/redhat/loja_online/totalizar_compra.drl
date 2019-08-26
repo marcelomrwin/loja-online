@@ -17,7 +17,7 @@ then
 		total-= ($compra.getTotalDescontos() * total );
 	}
 	 System.out.println("Total com desconto "+total);
-	 System.out.println("Frete "+total);
+	 System.out.println("Frete "+$compra.getFrete());
 	total+=$compra.getFrete();
     $compra.setValorTotal(total);
     System.out.println("TOTAL DA COMPRA "+$compra.getValorTotal());
