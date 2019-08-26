@@ -24,3 +24,15 @@ then
     System.out.println("TOTAL DA COMPRA "+$compra.getValorTotal());
     update($compra); 
 end
+
+rule "zerar frete quando nao houver itens"
+dialect "java"
+ruleflow-group "calcular_total_compra"
+when
+    $compra : Compra( produtos.size <= 0 );
+then
+	$compra.setFrete(0.0);
+    $compra.setValorTotal(0.0);
+    update($compra); 
+end
+
