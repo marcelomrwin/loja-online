@@ -4,8 +4,8 @@ Loja Online
 Projeto demonstrando o uso do Red Hat Decision Manager 7
 
 ### Para reproduzir a demo siga os seguintes passos:
-1. Realize a instalação do RHDM 7.5 seguindo o tutorial [Red Hat](https://access.redhat.com/documentation/en-us/red_hat_decision_manager/7.5/html/installing_and_configuring_red_hat_decision_manager_on_red_hat_jboss_eap_7.2/index) ou [Red Hat Developers](https://developers.redhat.com/products/red-hat-decision-manager/docs-and-apis).
-1. Inicie o servidor com o DM 7.5.
+1. Realize a instalação do RHDM 7.4.1 seguindo o tutorial [Red Hat](https://access.redhat.com/documentation/en-us/red_hat_decision_manager/7.5/html/installing_and_configuring_red_hat_decision_manager_on_red_hat_jboss_eap_7.2/index) ou [Red Hat Developers](https://developers.redhat.com/products/red-hat-decision-manager/docs-and-apis).
+1. Inicie o servidor com o DM 7.4.1
 1. Após realizar o login o DM apresentará a tela inicial
 ![01.png](images/01.png)
 1. Clique em **Design**
