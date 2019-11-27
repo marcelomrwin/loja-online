@@ -25,4 +25,6 @@ Projeto demonstrando o uso do Red Hat Decision Manager 7
 ![08.png](images/08.png)
 1. Acesse a API swagger através da [http://localhost:8080/kie-server/docs](http://localhost:8080/kie-server/docs/)
 
+Github do projeto de backend que consome as regras [https://github.com/marcelomrwin/loja-online-backend](https://github.com/marcelomrwin/loja-online-backend)
+
 O projeto com as regras está em operação e pronto para receber requisições.
