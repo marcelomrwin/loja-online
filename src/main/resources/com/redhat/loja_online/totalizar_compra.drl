@@ -7,41 +7,41 @@ when
     $compra : Compra();
 then
     Double total = 0.0;
-    
+
     for(int i=0; i < $compra.getProdutos().size();i++) {
 			ProdutoCompra pc = $compra.getProdutos().get(i);
 			total+=pc.getValorTotal();
 	}
-	
+
     System.out.println("Total sem desconto "+total);
     System.out.println("Total de descontos "+$compra.getTotalDescontos());
-	
+
 	if ($compra.getTotalDescontos()>0.0) {
 	    Double desconto = $compra.getTotalDescontos() * total;
 	    System.out.println("Desconto concedido "+desconto);
 		total-= desconto;
 	}
-	
+
 	System.out.println("Total com desconto "+total);
 	System.out.println("Frete "+$compra.getFrete());
-	
+
 	total+=$compra.getFrete();
     $compra.setValorTotal(total);
-    
+
     System.out.println("TOTAL DA COMPRA "+$compra.getValorTotal());
-    
-    update($compra); 
+
+    update($compra);
 end
 
 rule "zerar frete quando nao houver itens"
 dialect "java"
 ruleflow-group "calcular_total_compra"
 when
-    $compra : Compra( produtos.size <= 0 );
+    $compra : Compra( $produtos : produtos );
+    eval($produtos.size() > 0)
 then
 	$compra.setFrete(0.0);
     $compra.setValorTotal(0.0);
     $compra.setTotalDescontos(0.0);
-    update($compra); 
+    update($compra);
 end
-

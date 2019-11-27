@@ -28,3 +28,32 @@ Projeto demonstrando o uso do Red Hat Decision Manager 7
 Github do projeto de backend que consome as regras [https://github.com/marcelomrwin/loja-online-backend](https://github.com/marcelomrwin/loja-online-backend)
 
 O projeto com as regras está em operação e pronto para receber requisições.
+
+#### As seguintes regras estão implementadas por padrão:
+---
+![09.png](images/09.png)
+* Clientes com idade acima de 60 anos recebem desconto de 10%
+---
+![10.png](images/10.png)
+* Zerar o frete quando não houver itens de compra selecionados
+---
+![11.png](images/11.png)
+* Para clientes de nível 1,2 e 3 com compra no valor entre 0,00 e 100,00 pagam 100,00 de frete.
+* Para clientes de nível 1,2 e 3 com compra no valor entre 101,00 e 500,00 o valor do frete será 80,00.
+* Para clientes de nível 1,2 e 3 que residirem do cep 50000000 até 51000000 o valor do frete será 90.
+* Para clientes de nível 1,2 e 3 que residirem do cep 52000000 até 54999999 o valor do frete será 160.
+* Clientes de nível 4 pagam frete de 50,00
+* Clientes de nível 5 não pagam frete
+* Clientes de nível 3 comprando acima de 500,00 não pagam frete
+---
+![12.png](images/12.png)
+* Clientes de nível 1 comprando entre 10 e 19 itens recebem desconto de 5%
+* Clientes de nível 1 comprando a partir de 20 itens recebem desconto de 10%
+* Clientes de nível 2 comprando entre 10 e 19 itens recebem desconto de 10%
+* Clientes de nível 2 comprando a partir de 20 itens recebem desconto de 15%
+* Clientes de nível 3 comprando entre 10 e 19 itens recebem desconto de 15%
+* Clientes de nível 3 comprando a partir de 20 itens recebem desconto de 20%
+* Clientes de nível 4 comprando entre 10 e 19 itens recebem desconto de 20%
+* Clientes de nível 4 comprando a partir de 20 itens recebem desconto de 25%
+* Clientes de nível 5 comprando a partir de 1 item recebem desconto de 25%
+---
